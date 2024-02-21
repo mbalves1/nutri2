@@ -10,7 +10,9 @@ import { ConfigModule } from '@nestjs/config';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb+srv://murilobalves1:weGPLfUbyUjNNCIA@cluster0.dack263.mongodb.net/?retryWrites=true&w=majority'),
+    MongooseModule.forRoot(
+      'mongodb+srv://murilobalves1:weGPLfUbyUjNNCIA@cluster0.dack263.mongodb.net/?retryWrites=true&w=majority',
+    ),
     ConfigModule.forRoot({
       envFilePath: '.env',
     }),

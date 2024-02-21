@@ -51,7 +51,6 @@ export class IngredientsController {
   }
 
   @Get()
-  @UseGuards(AuthGuard)
   async findAll(@Req() request: Request) {
     const userId = this.getUserIdFromToken(request);
     if (!userId) {
