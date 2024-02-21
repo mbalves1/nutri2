@@ -18,12 +18,15 @@ export class IngredientsService {
   }
 
   async findAll(userid: string) {
+    // console.log(userid);
+    // return await this.ingredientModel
+    //   .find({
+    //     userid: userid,
+    //   })
+    //   .exec();
     console.log(userid);
-    return await this.ingredientModel
-      .find({
-        userid: userid,
-      })
-      .exec();
+
+    return 'this is a ntr';
   }
 
   findOne(id: number) {
